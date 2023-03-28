@@ -152,12 +152,4 @@
   } else {
     window.imageMapResize = factory()
   }
-
-  if ('jQuery' in window) {
-    window.jQuery.fn.imageMapResize = function $imageMapResizeF() {
-      return this.filter('map')
-        .each(scaleImageMap)
-        .end()
-    }
-  }
 })()
